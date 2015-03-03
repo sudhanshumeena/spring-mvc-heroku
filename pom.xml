@@ -72,10 +72,18 @@
                         <configuration>
                             <artifactItems>
                                 <artifactItem>
-                                    <groupId>com.github.jsimone</groupId>
-                                    <artifactId>webapp-runner</artifactId>
-                                    <version>7.0.57.2</version>
-                                    <destFileName>webapp-runner.jar</destFileName>
+                                    <!--tomcat-->
+                                    <!--<groupId>com.github.jsimone</groupId>-->
+                                    <!--<artifactId>webapp-runner</artifactId>-->
+                                    <!--<version>7.0.57.2</version>-->
+                                    <!--<destFileName>webapp-runner.jar</destFileName>-->
+                                </artifactItem>
+                                <!--jetty-->
+                                <artifactItem>
+                                    <groupId>org.mortbay.jetty</groupId>
+                                    <artifactId>jetty-runner</artifactId>
+                                    <version>7.5.4.v20111024</version>
+                                    <destFileName>jetty-runner.jar</destFileName>
                                 </artifactItem>
                             </artifactItems>
                         </configuration>
