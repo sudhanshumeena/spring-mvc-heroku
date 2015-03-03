@@ -71,13 +71,13 @@
                         </goals>
                         <configuration>
                             <artifactItems>
-                                <artifactItem>
-                                    <!--tomcat-->
+                                <!--tomcat-->
+                                <!--<artifactItem>-->
                                     <!--<groupId>com.github.jsimone</groupId>-->
                                     <!--<artifactId>webapp-runner</artifactId>-->
                                     <!--<version>7.0.57.2</version>-->
                                     <!--<destFileName>webapp-runner.jar</destFileName>-->
-                                </artifactItem>
+                                <!--</artifactItem>-->
                                 <!--jetty-->
                                 <artifactItem>
                                     <groupId>org.mortbay.jetty</groupId>
