@@ -1,9 +1,14 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
-    <link href="<c:url value="/resources/css/bootstrap.css" />" rel="stylesheet">
-    <script src="<c:url value="/resources/js/jquery-1.11.2.min.js" />"></script>
-    <script src="<c:url value="/resources/js/angular.min.js" />"></script>
+    <link href="<c:url value="webjars/bootstrap/3.3.2/css/bootstrap.css" />" rel="stylesheet">
+    <script src="<c:url value="webjars/jquery/2.1.3/jquery.min.js" />"></script>
+    <script src="<c:url value="webjars/angularjs/1.3.11/angular.min.js" />"></script>
+
+    <%--<link rel='stylesheet' href='webjars/bootstrap/3.3.2/css/bootstrap.min.css'>--%>
+    <%--<script type='text/javascript' src='webjars/jquery/2.1.3/jquery.min.js'></script>--%>
+    <%--<script type='text/javascript' src='webjars/angularjs/1.3.11/angular.min.js'></script>--%>
+
 </head>
 <body>
 <div class="container-fluid">
