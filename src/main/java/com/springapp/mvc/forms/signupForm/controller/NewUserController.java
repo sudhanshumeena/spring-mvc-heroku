@@ -1,7 +1,6 @@
 package com.springapp.mvc.forms.signupForm.controller;
 
 import com.springapp.mvc.forms.signupForm.model.NewUser;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
@@ -19,46 +18,38 @@ import java.util.List;
 
 @Controller
 @RequestMapping("/signup")
-public class NewUserController
-{
+public class NewUserController {
     @Autowired
     @Qualifier("newUserValidator")
     private Validator validator;
 
     @InitBinder
-    private void initBinder(WebDataBinder binder)
-    {
+    private void initBinder(WebDataBinder binder) {
         binder.setValidator(validator);
     }
 
     @RequestMapping(method = RequestMethod.GET)
-    public String initForm(Model model)
-    {
+    public String initForm(Model model) {
         NewUser newUser = new NewUser();
-//        newUser.setReceiveNewsletter(true);
-//        newUser.setGender("Male");
+        //        newUser.setReceiveNewsletter(true);
+        //        newUser.setGender("Male");
         model.addAttribute("newUser", newUser);
         initModelList(model);
         return "forms/user/SignUp";
     }
 
     @RequestMapping(method = RequestMethod.POST)
-    public String submitForm(Model model, @Validated NewUser newUser,
-                             BindingResult bindingResult)
-    {
-        if(bindingResult.hasErrors())
-        {
+    public String submitForm(Model model, @Validated NewUser newUser, BindingResult bindingResult) {
+        if(bindingResult.hasErrors()) {
             initModelList(model);
             return "forms/user/SignUp";
-        } else
-        {
+        } else {
             model.addAttribute("newUser", newUser);
             return "forms/user/SignUpSuccess";
         }
     }
 
-    private void initModelList(Model model)
-    {
+    private void initModelList(Model model) {
         List<String> newsletterList = new ArrayList<String>();
         newsletterList.add("yes");
         newsletterList.add("no");

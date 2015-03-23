@@ -2,8 +2,7 @@ package com.springapp.mvc.forms.signupForm.model;
 
 import java.util.List;
 
-public class NewUser
-{
+public class NewUser {
     private String userName;
     private String password;
     private String confirmPassword;
@@ -17,123 +16,99 @@ public class NewUser
     private List<String> javaSkills;
     private boolean receiveNewsletter;
 
-    public String getUserName()
-    {
+    public String getUserName() {
         return userName;
     }
 
-    public void setUserName(String userName)
-    {
+    public void setUserName(String userName) {
         this.userName = userName;
     }
 
-    public String getPassword()
-    {
+    public String getPassword() {
         return password;
     }
 
-    public void setPassword(String password)
-    {
+    public void setPassword(String password) {
         this.password = password;
     }
 
-    public String getConfirmPassword()
-    {
+    public String getConfirmPassword() {
         return confirmPassword;
     }
 
-    public void setConfirmPassword(String confirmPassword)
-    {
+    public void setConfirmPassword(String confirmPassword) {
         this.confirmPassword = confirmPassword;
     }
 
-    public String getFirstName()
-    {
+    public String getFirstName() {
         return firstName;
     }
 
-    public void setFirstName(String firstName)
-    {
+    public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
 
-    public String getMiddleName()
-    {
+    public String getMiddleName() {
         return middleName;
     }
 
-    public void setMiddleName(String middleName)
-    {
+    public void setMiddleName(String middleName) {
         this.middleName = middleName;
     }
 
-    public String getLastName()
-    {
+    public String getLastName() {
         return lastName;
     }
 
-    public void setLastName(String lastName)
-    {
+    public void setLastName(String lastName) {
         this.lastName = lastName;
     }
 
-    public String getGender()
-    {
+    public String getGender() {
         return gender;
     }
 
-    public void setGender(String gender)
-    {
+    public void setGender(String gender) {
         this.gender = gender;
     }
 
-    public String getEmail()
-    {
+    public String getEmail() {
         return email;
     }
 
-    public void setEmail(String email)
-    {
+    public void setEmail(String email) {
         this.email = email;
     }
 
-    public String getMobileNo()
-    {
+    public String getMobileNo() {
         return mobileNo;
     }
 
-    public void setMobileNo(String mobileNo)
-    {
+    public void setMobileNo(String mobileNo) {
         this.mobileNo = mobileNo;
     }
 
-    public String getCountry()
-    {
+    public String getCountry() {
         return country;
     }
 
-    public void setCountry(String country)
-    {
+    public void setCountry(String country) {
         this.country = country;
     }
 
-    public List<String> getJavaSkills()
-    {
+    public List<String> getJavaSkills() {
         return javaSkills;
     }
 
-    public void setJavaSkills(List<String> javaSkills)
-    {
+    public void setJavaSkills(List<String> javaSkills) {
         this.javaSkills = javaSkills;
     }
 
-    public boolean isReceiveNewsletter()
-    {
+    public boolean isReceiveNewsletter() {
         return receiveNewsletter;
     }
 
-    public void setReceiveNewsletter(boolean receiveNewsletter)
-    {
+    public void setReceiveNewsletter(boolean receiveNewsletter) {
         this.receiveNewsletter = receiveNewsletter;
     }
 }

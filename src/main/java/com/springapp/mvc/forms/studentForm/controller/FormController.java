@@ -19,21 +19,18 @@ import java.util.List;
 
 @Controller
 @RequestMapping("/studentForm")
-public class FormController
-{
+public class FormController {
     @Autowired
     @Qualifier("formValidator")
     private Validator validator;
 
     @InitBinder
-    private void initBinder(WebDataBinder binder)
-    {
+    private void initBinder(WebDataBinder binder) {
         binder.setValidator(validator);
     }
 
     @RequestMapping(method = RequestMethod.GET)
-    public String initForm(Model model)
-    {
+    public String initForm(Model model) {
         Form form = new Form();
         form.setHiddenMessage("Hidden message from Sudhanshu Meena");
         model.addAttribute("form", form);
@@ -42,22 +39,17 @@ public class FormController
     }
 
     @RequestMapping(method = RequestMethod.POST)
-    public String submitForm(Model model, @Validated Form form, BindingResult result)
-    {
-        if(result.hasErrors())
-        {
+    public String submitForm(Model model, @Validated Form form, BindingResult result) {
+        if(result.hasErrors()) {
             initModelList(model);
-            return  "/forms/studentForm/form";
-        }
-        else
-        {
+            return "/forms/studentForm/form";
+        } else {
             model.addAttribute("form", form);
             return "/forms/studentForm/success";
         }
     }
 
-    private void initModelList(Model model)
-    {
+    private void initModelList(Model model) {
         List<String> courses = new ArrayList<String>();
         courses.add("Maths");
         courses.add("Physics");
